@@ -1,0 +1,23 @@
+	SONARR:
+		URL: http://sonarr.box:8989
+		API_KEY: d9fd04190f2744ccb2d8995ba12035d0
+		QUALITY_PROFILE: HD-720p
+		LIBRARY_PATH: /downloads
+	RSS:
+		URL:
+			- https://www.tokyotosho.info/rss.php
+			- http://horriblesubs.info/rss.php?res=all
+	ANILIST:
+		CLIENT_ID: 5645
+		CLIENT_SECRET: 2CQ7fc9AHFHIL9i3L2jMK6vA5nFM5grnbwzRLW1A
+	SQLITE:
+		FILE: db/aniping.sqlite
+		SCHEMA: schema.ddl
+	BACK_END: Sonarr
+	DATABASE: Sqlite
+	SEARCH:
+		- Rss
+	SCRAPER:
+		- Anilist
+	SECRET_KEY: pikachu
+	IMAGE_CACHE: static/images/cache

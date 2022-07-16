@@ -1,0 +1,171 @@
+# start up with 'docker-compose up -d' to start in background
+# update images with 'docker-compose pull'
+# this assumes that you have a sibling directory to this file called 'config' that contains all of the config for these services
+# you can reference 'sabnzbd' 'radarr' or 'sonarr' from inside the containers (in the apps) to reference the other containers. no need to deal with IPs or hostnames
+# remember that docker is isolated from the rest of your filesystem. you need to add volumes to the entries
+# in order to give the processes access to them. so if you have multiple target directories for TV or Movies,
+# then make sure you add each one that you want radarr/sonarr/sabnzbd to see.
+
+version: '3'
+services:
+  homer:
+    image: b4bz/homer
+    #To build from source, comment previous line and uncomment below
+    #build: .
+    container_name: homer
+    networks:
+      srj_net:
+        ipv4_address: 172.28.0.2
+    volumes:
+      - ./config/homer/assets/:/www/assets
+    ports:
+      - 8080:8080
+    user: 1000:1000 # default
+    environment:
+      - INIT_ASSETS=1 # default
+  
+  sonarr:
+    image: linuxserver/sonarr:latest
+    container_name: sonarr
+    networks:
+      srj_net:
+        ipv4_address: 172.28.0.3
+    volumes:
+      - ./config/sonarr:/config
+      - /mnt/storage:/storage:rshared
+    ports:
+      - 8989:8989 # port mapping
+    environment:
+      - PUID=1000 # set this to the UID of your user
+      - PGID=1000
+      - TZ=Europe/Paris
+      - UMASK_SET=000
+    restart: unless-stopped
+
+  plex:
+    container_name: plex
+    image: linuxserver/plex
+    #image: plexinc/pms-docker
+    networks:
+      srj_net:
+        ipv4_address: 172.28.0.4
+    environment:
+      - TZ=Europe/Paris
+      - DOCKER_MODS=gilbn/theme.park:plex
+      - PUID=1000
+      - PGID=1000
+    # network_mode: host
+    volumes:
+      - ./config/plex:/config
+      - ./tmp/plex:/transcode
+      - /mnt:/mnt
+    restart: unless-stopped
+  
+  jackett:
+    image: lscr.io/linuxserver/jackett:latest
+    container_name: jackett
+    networks:
+      srj_net:
+        ipv4_address: 172.28.0.6
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Paris
+      - AUTO_UPDATE=true #optional
+      # - RUN_OPTS=<run options here> #optional
+    volumes:
+      - ./config/jackett:/config
+      - /mnt/storage/Video:/downloads
+    ports:
+      - 9117:9117
+    restart: unless-stopped
+
+  # deluge:
+  #   image: lscr.io/linuxserver/deluge:latest
+  #   container_name: deluge
+  #   networks:
+  #     srj_net:
+  #       ipv4_address: 172.28.0.5
+  #   environment:
+  #     - PUID=1000
+  #     - PGID=1000
+  #     - TZ=Europe/Paris
+  #     - DELUGE_LOGLEVEL=error #optional
+  #   volumes:
+  #     - ./config/deluge:/config
+  #     - /mnt/storage/Video/Anime:/downloads
+  #   ports:
+  #     - 8112:8112
+  #     - 6881:6881
+  #     - 6881:6881/udp
+  #   restart: unless-stopped
+
+  qbittorrent:
+    image: lscr.io/linuxserver/qbittorrent:latest
+    container_name: qbittorrent
+    networks:
+      srj_net:
+        ipv4_address: 172.28.0.7
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Paris
+      - WEBUI_PORT=8081
+    volumes:
+      - ./config/qbittorrent:/config
+      - /mnt/storage/Video/Anime:/downloads
+    ports:
+      - 8081:8081
+      - 6881:6881
+      - 6881:6881/udp
+    restart: unless-stopped
+
+  # hiveos:
+  #   container_name: hiveos
+  #   image: artur98/hiveos
+
+  # aniping:
+  #   container_name: aniping
+  #   image: kuroshi/aniping
+  #   environment:
+  #     - TZ=Europe/Paris
+  #   networks:
+  #     srj_net:
+  #       ipv4_address: 172.28.0.8
+  #   volumes:
+  #     - ./config/aniping:/app/config
+  #     - /media/gis/Disque\ Issy1/Video/Anime:/downloads
+  #     - /etc/localtime:/etc/localtime:ro
+  #     - /etc/timezone:/etc/timezone:ro
+  #   ports:
+  #     - 80:80
+    
+  satisfactory-server:
+      container_name: 'satisfactory-server'
+      hostname: 'satisfactory-server'
+      image: 'wolveix/satisfactory-server:latest'
+      ports:
+          - '7777:7777/udp'
+          - '15000:15000/udp'
+          - '15777:15777/udp'
+      volumes:
+          - './config/satisfactory:/config'
+      environment:
+          - MAXPLAYERS=4
+          - PGID=1000
+          - PUID=1000
+          - STEAMBETA=false
+      restart: unless-stopped
+
+networks:
+  srj_net:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.28.0.0/16
+
+# volumes:
+#   /media/gis/Disque\ Issy1/Video/AnimePlex:
+#   teslamate-grafana-data:
+#   mosquitto-conf:
+#   mosquitto-data:
