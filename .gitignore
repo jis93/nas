@@ -1,4 +1,6 @@
 **/logs
 *.log
+config/qbittorrent/qBittorrent/BT_backup/*
+config/sonarr/Backups/*
 config/jackett/Jackett/log*
-config/plex/Library/Application Support/Plex Media Server/*
+config/plex/Library/Application Support/Plex Media Server/Logs*

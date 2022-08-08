@@ -47,6 +47,8 @@ services:
     image: lscr.io/linuxserver/plex:latest
     #image: plexinc/pms-docker
     network_mode: host
+    devices:
+      - /dev/dri:/dev/dri
     environment:
       - TZ=Europe/Paris
       - VERSION=docker
