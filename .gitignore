@@ -1,0 +1,4 @@
+**/logs
+*.log
+config/jackett/Jackett/log*
+config/plex/Library/Application Support/Plex Media Server/*

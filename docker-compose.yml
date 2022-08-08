@@ -44,14 +44,12 @@ services:
 
   plex:
     container_name: plex
-    image: linuxserver/plex
+    image: lscr.io/linuxserver/plex:latest
     #image: plexinc/pms-docker
-    networks:
-      srj_net:
-        ipv4_address: 172.28.0.4
+    network_mode: host
     environment:
       - TZ=Europe/Paris
-      - DOCKER_MODS=gilbn/theme.park:plex
+      - VERSION=docker
       - PUID=1000
       - PGID=1000
     # network_mode: host
@@ -140,22 +138,22 @@ services:
   #   ports:
   #     - 80:80
     
-  satisfactory-server:
-      container_name: 'satisfactory-server'
-      hostname: 'satisfactory-server'
-      image: 'wolveix/satisfactory-server:latest'
-      ports:
-          - '7777:7777/udp'
-          - '15000:15000/udp'
-          - '15777:15777/udp'
-      volumes:
-          - './config/satisfactory:/config'
-      environment:
-          - MAXPLAYERS=4
-          - PGID=1000
-          - PUID=1000
-          - STEAMBETA=false
-      restart: unless-stopped
+  # satisfactory-server:
+  #     container_name: 'satisfactory-server'
+  #     hostname: 'satisfactory-server'
+  #     image: 'wolveix/satisfactory-server:latest'
+  #     ports:
+  #         - '7777:7777/udp'
+  #         - '15000:15000/udp'
+  #         - '15777:15777/udp'
+  #     volumes:
+  #         - './config/satisfactory:/config'
+  #     environment:
+  #         - MAXPLAYERS=4
+  #         - PGID=1000
+  #         - PUID=1000
+  #         - STEAMBETA=false
+  #     restart: unless-stopped
 
 networks:
   srj_net:
