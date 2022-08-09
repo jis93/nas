@@ -1,17 +1,17 @@
-Jul 16, 2022 01:30:04.890 [0x7f73cef29b38] INFO - Plex Tuner Service v1.0.0.0 - Docker Docker Container (LinuxServer.io) x86_64 - build: 
-Jul 16, 2022 01:30:04.891 [0x7f73cef29b38] INFO - Linux version: 5.15.0-40-generic (#43-Ubuntu SMP Wed Jun 15 12:54:21 UTC 2022), language: en-US
-Jul 16, 2022 01:30:04.891 [0x7f73cef29b38] INFO - Processor AMD Ryzen 5 5600X 6-Core Processor             
-Jul 16, 2022 01:30:04.891 [0x7f73cef29b38] INFO - /usr/lib/plexmediaserver/Plex Tuner Service /usr/lib/plexmediaserver/Resources/Tuner/Private /usr/lib/plexmediaserver/Resources/Tuner/Shared 1.27.2.5929-a806c5905 32600
-Jul 16, 2022 01:30:04.890 [0x7f73d082a808] INFO - [I] broker_t::start...
-Jul 16, 2022 01:30:04.892 [0x7f73d082a808] INFO - [I] device_manager_t::init.
-Jul 16, 2022 01:30:04.892 [0x7f73d082a808] INFO - [I] device_manager_t::init. Initialize provider manager
-Jul 16, 2022 01:30:04.892 [0x7f73d082a808] INFO - [I] device_manager_t::init. Initialize all device auxes
-Jul 16, 2022 01:30:04.892 [0x7f73d082a808] INFO - [I] dvb_device_factory_t::get_aux_list
-Jul 16, 2022 01:30:04.892 [0x7f73d082a808] INFO - [I] tvbutler_aux_t::init
-Jul 16, 2022 01:30:04.892 [0x7f73d082a808] INFO - [I] web_server_t::start. Starting web server on port 32600
-Jul 16, 2022 01:30:13.654 [0x7f73cebc5b38] INFO - [I] web_service_t::process_device_discovery
-Jul 16, 2022 01:30:13.654 [0x7f73cebc5b38] INFO - [I] device_reactor_t::get_device_list ()
-Jul 16, 2022 01:30:15.656 [0x7f73cebc5b38] INFO - [I] SAT2IP - discover_satip_servers(): no servers found
-Jul 16, 2022 01:30:16.074 [0x7f73cebc5b38] INFO - [I] v4l::DeviceGetList_impl. getting v4l device list
-Jul 16, 2022 01:30:16.075 [0x7f73cebc5b38] INFO - [I] onetv_factory::DeviceGetListEx >>
-Jul 16, 2022 01:30:16.075 [0x7f73cebc5b38] WARN - [W] onetv_factory::DeviceGetListEx. libusb_init returned an error -99
+Aug 09, 2022 11:04:36.734 [0x7f2a5d148b38] INFO - Plex Tuner Service v1.0.0.0 - Docker Docker Container (LinuxServer.io) x86_64 - build: 
+Aug 09, 2022 11:04:36.734 [0x7f2a5d148b38] INFO - Linux version: 5.15.0-43-generic (#46-Ubuntu SMP Tue Jul 12 10:30:17 UTC 2022), language: en-US
+Aug 09, 2022 11:04:36.734 [0x7f2a5d148b38] INFO - Processor Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+Aug 09, 2022 11:04:36.735 [0x7f2a5d148b38] INFO - /usr/lib/plexmediaserver/Plex Tuner Service /usr/lib/plexmediaserver/Resources/Tuner/Private /usr/lib/plexmediaserver/Resources/Tuner/Shared 1.28.0.5999-97678ded3 32600
+Aug 09, 2022 11:04:36.734 [0x7f2a5ea49808] INFO - [I] broker_t::start...
+Aug 09, 2022 11:04:36.736 [0x7f2a5ea49808] INFO - [I] device_manager_t::init.
+Aug 09, 2022 11:04:36.736 [0x7f2a5ea49808] INFO - [I] device_manager_t::init. Initialize provider manager
+Aug 09, 2022 11:04:36.736 [0x7f2a5ea49808] INFO - [I] device_manager_t::init. Initialize all device auxes
+Aug 09, 2022 11:04:36.736 [0x7f2a5ea49808] INFO - [I] dvb_device_factory_t::get_aux_list
+Aug 09, 2022 11:04:36.736 [0x7f2a5ea49808] INFO - [I] tvbutler_aux_t::init
+Aug 09, 2022 11:04:36.736 [0x7f2a5ea49808] INFO - [I] web_server_t::start. Starting web server on port 32600
+Aug 09, 2022 11:04:45.492 [0x7f2a5cde5b38] INFO - [I] web_service_t::process_device_discovery
+Aug 09, 2022 11:04:45.492 [0x7f2a5cde5b38] INFO - [I] device_reactor_t::get_device_list ()
+Aug 09, 2022 11:04:47.496 [0x7f2a5cde5b38] INFO - [I] SAT2IP - discover_satip_servers(): no servers found
+Aug 09, 2022 11:04:47.917 [0x7f2a5cde5b38] INFO - [I] v4l::DeviceGetList_impl. getting v4l device list
+Aug 09, 2022 11:04:47.922 [0x7f2a5cde5b38] INFO - [I] onetv_factory::DeviceGetListEx >>
+Aug 09, 2022 11:04:47.922 [0x7f2a5cde5b38] WARN - [W] onetv_factory::DeviceGetListEx. libusb_init returned an error -99

@@ -4388,3 +4388,141 @@
 2022-07-16 04:50:06.7|Error|DownloadedEpisodesImportService|Import failed, path does not exist or is not accessible by Sonarr: /downloads/[SubsPlease] Isekai Yakkyoku - 01 (720p) [429E2A45].mkv. Ensure the path exists and the user running Sonarr has the correct permissions to access this file/folder
 2022-07-16 04:50:06.7|Error|DownloadedEpisodesImportService|Import failed, path does not exist or is not accessible by Sonarr: /downloads/[SubsPlease] Yofukashi no Uta - 01 (720p) [2EAB7F2D].mkv. Ensure the path exists and the user running Sonarr has the correct permissions to access this file/folder
 2022-07-16 04:50:06.7|Error|DownloadedEpisodesImportService|Import failed, path does not exist or is not accessible by Sonarr: /downloads/[SubsPlease] Kuro no Shoukanshi - 01 (720p) [FA73E29E].mkv. Ensure the path exists and the user running Sonarr has the correct permissions to access this file/folder
+2022-08-09 11:04:36.9|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/Sonarr.exe - Version 3.0.9.1549
+2022-08-09 11:04:37.2|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2022-08-09 11:04:37.2|Info|Router|Application mode: Interactive
+2022-08-09 11:04:37.4|Info|MigrationLogger|*** Checking database for required migrations data source=/config/sonarr.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2022-08-09 11:04:37.5|Info|MigrationLogger|*** 169: add_malayalam_and_ukrainian_languages migrating ***
+2022-08-09 11:04:37.5|Info|add_malayalam_and_ukrainian_languages|Starting migration of Main DB to 169
+2022-08-09 11:04:37.6|Info|MigrationLogger|*** Checking database for required migrations data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2022-08-09 11:04:37.6|Info|MigrationLogger|*** 169: add_malayalam_and_ukrainian_languages migrating ***
+2022-08-09 11:04:37.6|Info|add_malayalam_and_ukrainian_languages|Starting migration of Log DB to 169
+2022-08-09 11:04:37.8|Info|OwinHostController|Listening on the following URLs:
+2022-08-09 11:04:37.8|Info|OwinHostController|  http://*:8989/
+2022-08-09 11:04:38.1|Info|SonarrBootstrapper|Starting Web Server
+2022-08-09 11:05:08.8|Info|RssSyncService|Starting RSS Sync
+2022-08-09 11:05:08.9|Info|RefreshSeriesService|Updating Black Summoner
+2022-08-09 11:05:09.1|Info|RefreshEpisodeService|Starting episode info refresh for: [416588][Black Summoner]
+2022-08-09 11:05:09.1|Info|RefreshEpisodeService|Finished episode refresh for series: [416588][Black Summoner].
+2022-08-09 11:05:09.3|Info|DiskScanService|Scanning Black Summoner
+2022-08-09 11:05:09.4|Info|MediaCoverService|Downloading Poster for [416588][Black Summoner] https://artworks.thetvdb.com/banners/v4/series/416588/posters/62e7d67b2bced.jpg
+2022-08-09 11:05:09.9|Info|SceneMappingService|Updating Scene mappings
+2022-08-09 11:05:10.1|Info|DiskScanService|Completed scanning disk for Black Summoner
+2022-08-09 11:05:10.1|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2022-08-09 11:05:10.1|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2022-08-09 11:05:10.1|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2022-08-09 11:05:10.1|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2022-08-09 11:05:10.1|Info|RefreshSeriesService|Updating Call of the Night
+2022-08-09 11:05:10.4|Info|RefreshEpisodeService|Starting episode info refresh for: [412374][Call of the Night]
+2022-08-09 11:05:10.4|Info|RefreshEpisodeService|Finished episode refresh for series: [412374][Call of the Night].
+2022-08-09 11:05:10.4|Info|DownloadDecisionMaker|Processing 100 releases
+2022-08-09 11:05:10.4|Warn|DiskScanService|Series' root folder (/tv) doesn't exist.
+2022-08-09 11:05:10.4|Info|RefreshSeriesService|Updating The Devil Is a Part-Timer!
+2022-08-09 11:05:10.5|Info|MediaCoverService|Downloading Banner for [412374][Call of the Night] https://artworks.thetvdb.com/banners/v4/series/412374/banners/62e5ab9cd4a0a.jpg
+2022-08-09 11:05:10.5|Info|RefreshEpisodeService|Starting episode info refresh for: [267441][The Devil Is a Part-Timer!]
+2022-08-09 11:05:10.5|Info|RefreshEpisodeService|Finished episode refresh for series: [267441][The Devil Is a Part-Timer!].
+2022-08-09 11:05:10.5|Info|MediaCoverService|Downloading Poster for [412374][Call of the Night] https://artworks.thetvdb.com/banners/v4/series/412374/posters/62e5a6b9b2c1d.jpg
+2022-08-09 11:05:10.6|Info|DiskScanService|Scanning The Devil Is a Part-Timer!
+2022-08-09 11:05:11.0|Info|DownloadService|Report sent to QBittorrent. [SubsPlease] Overlord IV - 04 (720p) [04DEE314].mkv
+2022-08-09 11:05:11.2|Info|BackupService|Starting Backup
+2022-08-09 11:05:11.3|Error|EventAggregator|MediaFileDeletionService failed while processing [EpisodeFileDeletedEvent]
+
+[v3.0.9.1549] System.IO.DirectoryNotFoundException: Could not find a part of the path '/storage/Video/AnimePlex/The Devil Is a Part-Timer!'.
+  at System.IO.Enumeration.FileSystemEnumerator`1[TResult].CreateDirectoryHandle (System.String path, System.Boolean ignoreNotFound) [0x00032] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.IO.Enumeration.FileSystemEnumerator`1[TResult]..ctor (System.String directory, System.IO.EnumerationOptions options) [0x00048] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.IO.Enumeration.FileSystemEnumerable`1+DelegateEnumerator[TResult]..ctor (System.IO.Enumeration.FileSystemEnumerable`1[TResult] enumerable) [0x00000] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.IO.Enumeration.FileSystemEnumerable`1[TResult]..ctor (System.String directory, System.IO.Enumeration.FileSystemEnumerable`1+FindTransform[TResult] transform, System.IO.EnumerationOptions options) [0x00042] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.IO.Enumeration.FileSystemEnumerableFactory.UserDirectories (System.String directory, System.String expression, System.IO.EnumerationOptions options) [0x00014] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.IO.Directory.InternalEnumeratePaths (System.String path, System.String searchPattern, System.IO.SearchTarget searchTarget, System.IO.EnumerationOptions options) [0x00045] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.IO.Directory.EnumerateDirectories (System.String path, System.String searchPattern, System.IO.EnumerationOptions enumerationOptions) [0x00000] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.IO.Directory.EnumerateDirectories (System.String path) [0x0000b] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at NzbDrone.Common.Disk.DiskProviderBase.RemoveEmptySubfolders (System.String path) [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Disk\DiskProviderBase.cs:487 
+  at NzbDrone.Core.MediaFiles.MediaFileDeletionService.Handle (NzbDrone.Core.MediaFiles.Events.EpisodeFileDeletedEvent message) [0x00062] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\MediaFiles\MediaFileDeletionService.cs:142 
+  at NzbDrone.Core.Messaging.Events.EventAggregator.PublishEvent[TEvent] (TEvent event) [0x0011a] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Messaging\Events\EventAggregator.cs:92 
+
+2022-08-09 11:05:11.3|Info|DiskScanService|Completed scanning disk for The Devil Is a Part-Timer!
+2022-08-09 11:05:11.3|Info|MetadataService|Series folder does not exist, skipping metadata creation
+2022-08-09 11:05:11.3|Info|RefreshSeriesService|Updating Dr. Stone
+2022-08-09 11:05:11.4|Info|RefreshEpisodeService|Starting episode info refresh for: [355774][Dr. Stone]
+2022-08-09 11:05:11.4|Info|RefreshEpisodeService|Finished episode refresh for series: [355774][Dr. Stone].
+2022-08-09 11:05:11.5|Info|DiskScanService|Scanning Dr. Stone
+2022-08-09 11:05:11.5|Info|DiskScanService|Completed scanning disk for Dr. Stone
+2022-08-09 11:05:11.5|Info|MetadataService|Series folder does not exist, skipping metadata creation
+2022-08-09 11:05:11.5|Info|RefreshSeriesService|Skipping refresh of series: My Teen Romantic Comedy SNAFU
+2022-08-09 11:05:11.5|Info|DiskScanService|Scanning My Teen Romantic Comedy SNAFU
+2022-08-09 11:05:11.5|Info|DiskScanService|Completed scanning disk for My Teen Romantic Comedy SNAFU
+2022-08-09 11:05:11.5|Info|MetadataService|Series folder does not exist, skipping metadata creation
+2022-08-09 11:05:11.5|Info|RefreshSeriesService|Updating Overlord
+2022-08-09 11:05:11.6|Info|RefreshEpisodeService|Starting episode info refresh for: [294002][Overlord]
+2022-08-09 11:05:11.6|Info|RefreshEpisodeService|Finished episode refresh for series: [294002][Overlord].
+2022-08-09 11:05:11.6|Info|MetadataService|Series folder does not exist, skipping metadata image creation
+2022-08-09 11:05:11.7|Info|DiskScanService|Scanning Overlord
+2022-08-09 11:05:11.7|Info|RecycleBinProvider|Recycle Bin has not been configured, cannot cleanup.
+2022-08-09 11:05:11.8|Info|ImportListSyncService|Starting Import List Sync
+2022-08-09 11:05:11.8|Info|ImportListSyncService|Processing 0 list items
+2022-08-09 11:05:11.8|Info|ImportListSyncService|Import List Sync Completed. Items found: 0, Series added: 0
+2022-08-09 11:05:11.9|Info|HousekeepingService|Running housecleaning tasks
+2022-08-09 11:05:11.9|Info|DiskScanService|Completed scanning disk for Overlord
+2022-08-09 11:05:11.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2022-08-09 11:05:11.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2022-08-09 11:05:11.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2022-08-09 11:05:11.9|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2022-08-09 11:05:11.9|Info|RefreshSeriesService|Updating Parallel World Pharmacy
+2022-08-09 11:05:12.0|Info|Database|Vacuuming Log database
+2022-08-09 11:05:12.0|Info|Database|Log database compressed
+2022-08-09 11:05:12.0|Info|Database|Vacuuming Main database
+2022-08-09 11:05:12.0|Info|Database|Main database compressed
+2022-08-09 11:05:12.0|Info|RefreshEpisodeService|Starting episode info refresh for: [406592][Parallel World Pharmacy]
+2022-08-09 11:05:12.0|Info|RefreshEpisodeService|Finished episode refresh for series: [406592][Parallel World Pharmacy].
+2022-08-09 11:05:12.1|Info|DiskScanService|Scanning Parallel World Pharmacy
+2022-08-09 11:05:12.4|Info|DiskScanService|Completed scanning disk for Parallel World Pharmacy
+2022-08-09 11:05:12.4|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2022-08-09 11:05:12.4|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2022-08-09 11:05:12.4|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2022-08-09 11:05:12.4|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2022-08-09 11:05:13.0|Info|DownloadService|Report sent to QBittorrent. [SubsPlease] Overlord IV - 05 (720p) [FA68FB62].mkv
+2022-08-09 11:05:15.0|Info|DownloadService|Report sent to QBittorrent. [SubsPlease] Isekai Yakkyoku - 05 (720p) [0A753A43].mkv
+2022-08-09 11:05:15.0|Info|RssSyncService|RSS Sync Completed. Reports found: 100, Reports grabbed: 3
+2022-08-09 11:05:20.2|Error|DownloadedEpisodesImportService|Import failed, path does not exist or is not accessible by Sonarr: /downloads/[SubsPlease] Overlord IV - 04 (720p) [04DEE314].mkv. Ensure the path exists and the user running Sonarr has the correct permissions to access this file/folder
+2022-08-09 11:06:39.1|Error|DownloadedEpisodesImportService|Import failed, path does not exist or is not accessible by Sonarr: /downloads/[SubsPlease] Overlord IV - 04 (720p) [04DEE314].mkv. Ensure the path exists and the user running Sonarr has the correct permissions to access this file/folder
+2022-08-09 11:06:39.1|Error|DownloadedEpisodesImportService|Import failed, path does not exist or is not accessible by Sonarr: /downloads/[SubsPlease] Isekai Yakkyoku - 05 (720p) [0A753A43].mkv. Ensure the path exists and the user running Sonarr has the correct permissions to access this file/folder
+2022-08-09 11:06:39.1|Error|DownloadedEpisodesImportService|Import failed, path does not exist or is not accessible by Sonarr: /downloads/[SubsPlease] Overlord IV - 05 (720p) [FA68FB62].mkv. Ensure the path exists and the user running Sonarr has the correct permissions to access this file/folder
+2022-08-09 11:08:09.0|Error|DownloadedEpisodesImportService|Import failed, path does not exist or is not accessible by Sonarr: /downloads/[SubsPlease] Overlord IV - 04 (720p) [04DEE314].mkv. Ensure the path exists and the user running Sonarr has the correct permissions to access this file/folder
+2022-08-09 11:08:09.0|Error|DownloadedEpisodesImportService|Import failed, path does not exist or is not accessible by Sonarr: /downloads/[SubsPlease] Isekai Yakkyoku - 05 (720p) [0A753A43].mkv. Ensure the path exists and the user running Sonarr has the correct permissions to access this file/folder
+2022-08-09 11:08:09.0|Error|DownloadedEpisodesImportService|Import failed, path does not exist or is not accessible by Sonarr: /downloads/[SubsPlease] Overlord IV - 05 (720p) [FA68FB62].mkv. Ensure the path exists and the user running Sonarr has the correct permissions to access this file/folder
+2022-08-09 11:08:46.0|Error|DownloadedEpisodesImportService|Import failed, path does not exist or is not accessible by Sonarr: /downloads/[SubsPlease] Overlord IV - 04 (720p) [04DEE314].mkv. Ensure the path exists and the user running Sonarr has the correct permissions to access this file/folder
+2022-08-09 11:08:46.0|Error|DownloadedEpisodesImportService|Import failed, path does not exist or is not accessible by Sonarr: /downloads/[SubsPlease] Isekai Yakkyoku - 05 (720p) [0A753A43].mkv. Ensure the path exists and the user running Sonarr has the correct permissions to access this file/folder
+2022-08-09 11:08:46.0|Error|DownloadedEpisodesImportService|Import failed, path does not exist or is not accessible by Sonarr: /downloads/[SubsPlease] Overlord IV - 05 (720p) [FA68FB62].mkv. Ensure the path exists and the user running Sonarr has the correct permissions to access this file/folder
+2022-08-09 11:10:09.5|Info|RecycleBinProvider|Recycling Bin has not been configured, deleting permanently. /storage/Video/AnimePlex/Overlord/Season 4/Overlord - S04E04 - The Ruler of Conspiracy HDTV-720p.mkv
+2022-08-09 11:10:09.5|Warn|ImportApprovedEpisodes|Couldn't import episode /storage/Video/Anime/[SubsPlease] Overlord IV - 04 (720p) [04DEE314].mkv
+
+[v3.0.9.1549] System.IO.IOException: Read-only file system
+  at System.IO.FileSystem.DeleteFile (System.String fullPath) [0x0006d] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.IO.File.Delete (System.String path) [0x00014] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at NzbDrone.Common.Disk.DiskProviderBase.DeleteFile (System.String path) [0x00067] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Disk\DiskProviderBase.cs:200 
+  at NzbDrone.Core.MediaFiles.RecycleBinProvider.DeleteFile (System.String path, System.String subfolder) [0x00054] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\MediaFiles\RecycleBinProvider.cs:86 
+  at NzbDrone.Core.MediaFiles.UpgradeMediaFileService.UpgradeEpisodeFile (NzbDrone.Core.MediaFiles.EpisodeFile episodeFile, NzbDrone.Core.Parser.Model.LocalEpisode localEpisode, System.Boolean copyOnly) [0x00152] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\MediaFiles\UpgradeMediaFileService.cs:64 
+  at NzbDrone.Core.MediaFiles.EpisodeImport.ImportApprovedEpisodes.Import (System.Collections.Generic.List`1[T] decisions, System.Boolean newDownload, NzbDrone.Core.Download.DownloadClientItem downloadClientItem, NzbDrone.Core.MediaFiles.EpisodeImport.ImportMode importMode) [0x0029b] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\MediaFiles\EpisodeImport\ImportApprovedEpisodes.cs:109 
+
+2022-08-09 11:10:09.9|Info|RecycleBinProvider|Recycling Bin has not been configured, deleting permanently. /storage/Video/AnimePlex/Parallel World Pharmacy/Season 1/Parallel World Pharmacy - S01E05 - Daily Life at Parallel World Pharmacy and Cosmetics HDTV-720p.mkv
+2022-08-09 11:10:09.9|Warn|ImportApprovedEpisodes|Couldn't import episode /storage/Video/Anime/[SubsPlease] Isekai Yakkyoku - 05 (720p) [0A753A43].mkv
+
+[v3.0.9.1549] System.IO.IOException: Read-only file system
+  at System.IO.FileSystem.DeleteFile (System.String fullPath) [0x0006d] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.IO.File.Delete (System.String path) [0x00014] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at NzbDrone.Common.Disk.DiskProviderBase.DeleteFile (System.String path) [0x00067] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Disk\DiskProviderBase.cs:200 
+  at NzbDrone.Core.MediaFiles.RecycleBinProvider.DeleteFile (System.String path, System.String subfolder) [0x00054] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\MediaFiles\RecycleBinProvider.cs:86 
+  at NzbDrone.Core.MediaFiles.UpgradeMediaFileService.UpgradeEpisodeFile (NzbDrone.Core.MediaFiles.EpisodeFile episodeFile, NzbDrone.Core.Parser.Model.LocalEpisode localEpisode, System.Boolean copyOnly) [0x00152] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\MediaFiles\UpgradeMediaFileService.cs:64 
+  at NzbDrone.Core.MediaFiles.EpisodeImport.ImportApprovedEpisodes.Import (System.Collections.Generic.List`1[T] decisions, System.Boolean newDownload, NzbDrone.Core.Download.DownloadClientItem downloadClientItem, NzbDrone.Core.MediaFiles.EpisodeImport.ImportMode importMode) [0x0029b] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\MediaFiles\EpisodeImport\ImportApprovedEpisodes.cs:109 
+
+2022-08-09 11:10:10.2|Info|RecycleBinProvider|Recycling Bin has not been configured, deleting permanently. /storage/Video/AnimePlex/Overlord/Season 4/Overlord - S04E05 - In Pursuit of the Land of Dwarves HDTV-720p.mkv
+2022-08-09 11:10:10.3|Warn|ImportApprovedEpisodes|Couldn't import episode /storage/Video/Anime/[SubsPlease] Overlord IV - 05 (720p) [FA68FB62].mkv
+
+[v3.0.9.1549] System.IO.IOException: Read-only file system
+  at System.IO.FileSystem.DeleteFile (System.String fullPath) [0x0006d] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at System.IO.File.Delete (System.String path) [0x00014] in <de882a77e7c14f8ba5d298093dde82b2>:0 
+  at NzbDrone.Common.Disk.DiskProviderBase.DeleteFile (System.String path) [0x00067] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Disk\DiskProviderBase.cs:200 
+  at NzbDrone.Core.MediaFiles.RecycleBinProvider.DeleteFile (System.String path, System.String subfolder) [0x00054] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\MediaFiles\RecycleBinProvider.cs:86 
+  at NzbDrone.Core.MediaFiles.UpgradeMediaFileService.UpgradeEpisodeFile (NzbDrone.Core.MediaFiles.EpisodeFile episodeFile, NzbDrone.Core.Parser.Model.LocalEpisode localEpisode, System.Boolean copyOnly) [0x00152] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\MediaFiles\UpgradeMediaFileService.cs:64 
+  at NzbDrone.Core.MediaFiles.EpisodeImport.ImportApprovedEpisodes.Import (System.Collections.Generic.List`1[T] decisions, System.Boolean newDownload, NzbDrone.Core.Download.DownloadClientItem downloadClientItem, NzbDrone.Core.MediaFiles.EpisodeImport.ImportMode importMode) [0x0029b] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\MediaFiles\EpisodeImport\ImportApprovedEpisodes.cs:109 
+

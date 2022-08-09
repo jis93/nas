@@ -670,3 +670,36 @@
 (N) 2022-07-16T01:37:29 - '[SubsPlease] Yofukashi no Uta - 01 (720p) [2EAB7F2D].mkv' reached the maximum ratio you set. Paused.
 (N) 2022-07-16T01:37:29 - '[SubsPlease] Kuro no Shoukanshi - 01 (720p) [FA73E29E].mkv' reached the maximum ratio you set. Paused.
 (N) 2022-07-16T01:37:53 - Web UI: Now listening on IP: *, port: 8081
+(N) 2022-08-09T11:04:35 - qBittorrent v4.4.3.1 started
+(N) 2022-08-09T11:04:35 - Using config directory: /config/qBittorrent
+(I) 2022-08-09T11:04:35 - Trying to listen on: 0.0.0.0:6881,[::]:6881
+(N) 2022-08-09T11:04:35 - Peer ID: -qB4431-
+(N) 2022-08-09T11:04:35 - HTTP User-Agent is 'qBittorrent/4.4.3.1'
+(I) 2022-08-09T11:04:35 - DHT support [ON]
+(I) 2022-08-09T11:04:35 - Local Peer Discovery support [ON]
+(I) 2022-08-09T11:04:35 - PeX support [ON]
+(I) 2022-08-09T11:04:35 - Anonymous mode [OFF]
+(I) 2022-08-09T11:04:35 - Encryption support [ON]
+(I) 2022-08-09T11:04:35 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Fri Jul 1 02:23:19 2022.
+(N) 2022-08-09T11:04:35 - Using built-in Web UI.
+(W) 2022-08-09T11:04:35 - Couldn't load Web UI translation for selected locale (C).
+(N) 2022-08-09T11:04:35 - Web UI: Now listening on IP: *, port: 8081
+(I) 2022-08-09T11:04:35 - Successfully listening on IP: 127.0.0.1, port: TCP/6881
+(I) 2022-08-09T11:04:35 - Successfully listening on IP: 127.0.0.1, port: UTP/6881
+(I) 2022-08-09T11:04:35 - Successfully listening on IP: 172.28.0.7, port: TCP/6881
+(I) 2022-08-09T11:04:35 - Successfully listening on IP: 172.28.0.7, port: UTP/6881
+(N) 2022-08-09T11:04:35 - '[SubsPlease] Yofukashi no Uta - 01 (720p) [2EAB7F2D].mkv' restored.
+(N) 2022-08-09T11:04:35 - '[SubsPlease] Yofukashi no Uta - 02 (720p) [A898281D].mkv' restored.
+(N) 2022-08-09T11:04:35 - '[SubsPlease] Isekai Yakkyoku - 01 (720p) [429E2A45].mkv' restored.
+(N) 2022-08-09T11:04:35 - '[SubsPlease] Kuro no Shoukanshi - 01 (720p) [FA73E29E].mkv' restored.
+(C) 2022-08-09T11:04:35 - File sizes mismatch for torrent '[SubsPlease] Isekai Yakkyoku - 01 (720p) [429E2A45].mkv'. Cannot proceed further.
+(C) 2022-08-09T11:04:35 - File sizes mismatch for torrent '[SubsPlease] Yofukashi no Uta - 01 (720p) [2EAB7F2D].mkv'. Cannot proceed further.
+(C) 2022-08-09T11:04:35 - File sizes mismatch for torrent '[SubsPlease] Kuro no Shoukanshi - 01 (720p) [FA73E29E].mkv'. Cannot proceed further.
+(C) 2022-08-09T11:04:35 - File sizes mismatch for torrent '[SubsPlease] Yofukashi no Uta - 02 (720p) [A898281D].mkv'. Cannot proceed further.
+(I) 2022-08-09T11:04:35 - Detected external IP: 82.65.143.186
+(I) 2022-08-09T11:04:36 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Mon Aug 1 02:36:07 2022.
+(I) 2022-08-09T11:04:36 - Successfully updated IP geolocation database.
+(N) 2022-08-09T11:04:39 - WebAPI login success. IP: ::ffff:172.28.0.3
+(N) 2022-08-09T11:05:11 - '[SubsPlease] Overlord IV - 04 (720p) [04DEE314].mkv' added to download list.
+(N) 2022-08-09T11:05:13 - '[SubsPlease] Overlord IV - 05 (720p) [FA68FB62].mkv' added to download list.
+(N) 2022-08-09T11:05:15 - '[SubsPlease] Isekai Yakkyoku - 05 (720p) [0A753A43].mkv' added to download list.
